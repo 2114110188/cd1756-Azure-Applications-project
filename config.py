@@ -5,13 +5,13 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 class Config(object):
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'secret-key'
 
-    BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT') or 'kiemblob'
-    BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or '/f0RLu5+951nJmWIpB3fNWeNl+zub25iS1LJdtGxMWLiMEWJsTlwDNXmkHQZ5n+xk3URAv0PacZy+AStVx35Vg=='
+    BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT') or 'kiemnguyenblob'
+    BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or '9qBSFrwgOIQCIl9BKOuLTPrMHnLmlpAANPraVlC+Q9+XkCDY833POXPqgxAsnklAwsxwk4u4l3t2+AStBliWCw=='
     BLOB_CONTAINER = os.environ.get('BLOB_CONTAINER') or 'kiemcontainer'
 
-    SQL_SERVER = os.environ.get('SQL_SERVER') or 'kiemnt2.database.windows.net'
-    SQL_DATABASE = os.environ.get('SQL_DATABASE') or 'kiemnt2db'
-    SQL_USER_NAME = os.environ.get('SQL_USER_NAME') or 'kiemnt2admin'
+    SQL_SERVER = os.environ.get('SQL_SERVER') or 'kiemnguyensv.database.windows.net'
+    SQL_DATABASE = os.environ.get('SQL_DATABASE') or 'kiemnguyen123'
+    SQL_USER_NAME = os.environ.get('SQL_USER_NAME') or 'knadmin'
     SQL_PASSWORD = os.environ.get('SQL_PASSWORD') or '1qaZ2wsX'
     # Below URI may need some adjustments for driver version, based on your OS, if running locally
     SQLALCHEMY_DATABASE_URI = 'mssql+pyodbc://' + SQL_USER_NAME + '@' + SQL_SERVER + ':' + SQL_PASSWORD + '@' + SQL_SERVER + ':1433/' + SQL_DATABASE  + '?driver=ODBC+Driver+17+for+SQL+Server'
